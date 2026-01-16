@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lowtian RealWRLD
 
 Proyecto de sitio web para marca de ropa urbana.  
@@ -26,3 +27,7 @@ Objetivo: mostrar productos de forma atractiva, facilitar la exploración del ca
 ## 📞 Comunicación
 - Avances semanales por correo
 - Dudas rápidas por WhatsApp
+=======
+# Lowtian-RealWRLD
+Proyecto de sitio web para marca de ropa urbana.
+>>>>>>> 8a7babab6990c42d489e0a5966aeae2a2dd9ce77
