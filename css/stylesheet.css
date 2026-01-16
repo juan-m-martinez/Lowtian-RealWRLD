@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+}
+
+.lowtian-title {
+    font-weight: 700;
+    /* Bold */
+    font-size: 1.5rem;
+    /* Tamaño */
+    line-height: 1;
+    /* 100% */
+    letter-spacing: 0.35em;
+    /* 35% */
+    color: #ffffff;
+    /* Blanco */
+    margin-top: 39.32px;
+    /* espacio interno arriba */
+    margin-left: 38.13px;
+    /* espacio interno a la izquierda */
+
+}
+
+.navbar-collapse {
+    font-size: 0.938rem;
+    margin-left: 375px;
+    /* separación entre cada item */
+    margin-top: 44.82px;
+    /* distancia desde el borde superior */
+    gap: 89.88px;
+    /* espacio uniforme entre todos los li */
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.938rem;
+}
+
+.navbar-nav .nav-link:hover {
+    opacity: 0.7;
+}
+
+.nav-icon {
+    color: #F8F8F8;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-icon:hover {
+    opacity: 0.7;
+}
+
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    background: linear-gradient(90deg, #cfc9bc 0%, #1b1b1b 60%);
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(8.14rem, 9vw, 7.5rem);
+    line-height: 1;
+    letter-spacing: 0.18em;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+    
+}
+
+
+.hero-description {    
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 420px;
+    opacity: 0.85;    
+}
+
+
+.hero-price {
+    
+    font-weight: 700;
+
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+
+    margin-bottom: 1.5rem;
+}
+
+
+.hero .btn {
+    
+    font-weight: 500;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+
+    padding: 0.75rem 2rem;
+}
+
+.hero-image img {
+    max-height: 80vh;
+}
+
+/* NEW IN vertical */
+.badge-new {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(8px);
+    }
+
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+
+    .hero-title {
+        letter-spacing: 0.08em;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+}
