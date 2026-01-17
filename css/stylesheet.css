@@ -1,7 +1,20 @@
 body {
-    background: linear-gradient(to right, #111, #333);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, #111, #333); */
     color: white;
     font-family: "Montserrat", sans-serif;
+    background-image: url(../img/fondo-lowtian.jpg);
+    background-repeat: no-repeat;
+    /* evita que se repita */
+    background-size: cover;
+    /* hace que cubra toda la pantalla */
+    background-position: center center;
+    /* centra la imagen */
+    background-attachment: fixed;
+    /* mantiene el fondo fijo al hacer scroll */
+
 }
 
 /* NAVBAR */
@@ -26,14 +39,10 @@ body {
     /* Blanco */
     margin-top: 39.32px;
     /* espacio interno arriba */
-    margin-left: 38.13px;
-    /* espacio interno a la izquierda */
-
 }
 
 .navbar-collapse {
     font-size: 0.938rem;
-    margin-left: 375px;
     /* separación entre cada item */
     margin-top: 44.82px;
     /* distancia desde el borde superior */
@@ -46,7 +55,7 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     font-size: 0.938rem;
 }
 
@@ -68,7 +77,7 @@ body {
 /* HERO SECTION */
 .hero {
     position: relative;
-    background: linear-gradient(90deg, #cfc9bc 0%, #1b1b1b 60%);
+    /* background: linear-gradient(90deg, #cfc9bc 0%, #1b1b1b 60%); */
     color: #ffffff;
     overflow: hidden;
 }
@@ -76,43 +85,42 @@ body {
 .hero-title {
     font-weight: 700;
     text-transform: uppercase;
-    font-size: clamp(8.14rem, 9vw, 7.5rem);
+    /*font-size: clamp(8.14rem, 9vw, 7.5rem);*/
+    font-size: 8.14rem;
+    color: #ffffff;
     line-height: 1;
-    letter-spacing: 0.18em;
     margin-bottom: 2rem;
     white-space: nowrap;
-    
+    margin-left: 68.46px;
 }
 
 
-.hero-description {    
-    font-weight: 400;
+.hero-description {
+    font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.7;
-    max-width: 420px;
-    opacity: 0.85;    
+    max-width: 500px;
+    opacity: 0.85;
+
+    margin-left: 113.34px;
 }
 
 
 .hero-price {
-    
-    font-weight: 700;
-
+    font-weight: 600;
     font-size: 2.2rem;
     letter-spacing: 0.05em;
-
     margin-bottom: 1.5rem;
+    margin-left: 113.34px;
 }
 
 
 .hero .btn {
-    
-    font-weight: 500;
-
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-
     padding: 0.75rem 2rem;
+    margin-left: 113.34px;
 }
 
 .hero-image img {
@@ -121,14 +129,30 @@ body {
 
 /* NEW IN vertical */
 .badge-new {
-    position: absolute;
+    position: fixed;
+    padding-left: 20px;
     left: 40px;
     bottom: 40px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     letter-spacing: 0.2em;
-    font-size: 0.75rem;
+    font-size: 1.1rem;
     opacity: 0.7;
+    font-weight: 400;
+    padding-top: 10rem;
+}
+
+.badge-new::before {    
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 1.83px;
+    /* grosor */
+    height: 20vh;
+    /* ocupa toda la altura */
+    background-color: #ffffff;
+    /* color de la línea */
 }
 
 @media (max-width: 768px) {
